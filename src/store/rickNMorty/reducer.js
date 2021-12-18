@@ -1,7 +1,7 @@
 import { SET_CHARACTERS_LIST, UPDATE_SEARCH_NAME } from "./types";
 
 export const rickNMorty = (
-    state = { chatactersList: [], searchName: [] },
+    state = { charactersList: [], searchName: "" },
     action
 ) => {
     switch (action.type) {
