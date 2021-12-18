@@ -1,11 +1,10 @@
-import CharactersList from "./CharactersList";
-import FindForm from "./FindForm";
 import { useState } from "react";
+import CharacterList from "./CharactersList";
+import FindForm from "./FindForm";
 
 const RickNMorty = () => {
     const [characterList, setCharacterList] = useState([]);
     const [name, setName] = useState("");
-
     const findCharacter = () => {
         fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
             .then((res) => res.json())
@@ -20,7 +19,7 @@ const RickNMorty = () => {
                 onNameChange={setName}
                 findCharacter={findCharacter}
             />
-            <CharactersList charactersList={characterList} />
+            <CharacterList characterList={characterList} />
         </>
     );
 };

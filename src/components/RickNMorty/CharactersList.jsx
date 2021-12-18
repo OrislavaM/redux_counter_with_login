@@ -1,7 +1,7 @@
-const CharactersList = ({ charactersList = [] }) => {
+const CharactersList = ({ characterList = [] }) => {
     return (
         <>
-            {charactersList.map(({ name }) => (
+            {characterList.map(({ name }) => (
                 <div>{name}</div>
             ))}
         </>

@@ -6,7 +6,7 @@ const FindForm = ({ name, findCharacter, onNameChange }) => {
                 onChange={(event) => onNameChange(event.target.value)}
                 placeholder="Input name..."
                 name="name"
-            />
+            ></input>
             <button type="button" onClick={findCharacter}>
                 Find
             </button>
